@@ -8,7 +8,7 @@ from google.genai import types
 
 def generate():
     client = genai.Client(
-        api_key="AIzaSyBG0lk7Sufde79OBWS2eyYHBSKR_LY5ndw"
+        api_key="API_KEY"
     )
 
     model = "gemini-3-flash-preview"
@@ -62,5 +62,6 @@ if st.button("Ask"):
         model="gemini-3-flash-preview",
         contents=contents
     )
+
 
     st.write(response.text)
