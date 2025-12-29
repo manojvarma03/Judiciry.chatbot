@@ -44,7 +44,7 @@ import streamlit as st
 from google import genai
 from google.genai import types
 
-client = genai.Client(api_key="AIzaSyBG0lk7Sufde79OBWS2eyYHBSKR_LY5ndw")  # put your key
+client = genai.Client(api_key="API_KEY")  # put your key
 
 st.title("Analysis Machine Health")
 
@@ -65,3 +65,4 @@ if st.button("Ask"):
 
 
     st.write(response.text)
+
